@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cek Palindrome</title>
+	</head>
+	<script>
+		function cekPalindrome() {
+			const input = document.getElementById("input").value;
+			const reversedInput = input.split("").reverse().join("");
+			if (input === reversedInput) {
+				alert("Palindrome!");
+			} else {
+				alert("Not a palindrome!");
+			}
+		}
+	</script>
+	<body>
+		<div class="wrapper">
+			<div class="box">
+				<div class="box-wrapper">
+					<h1>Cek Palindrome</h1>
+					<p>Cek palindrome yang ada di dalam pikiranmu</p>
+					<div
+						style="
+							display: flex;
+							flex-direction: column;
+							gap: 20px;
+							margin-bottom: 30px;
+						"
+					>
+						<input
+							type="text"
+							id="input"
+							placeholder="Masukkan kata atau angka"
+						/>
+						<button
+							onclick="cekPalindrome()"
+							style="width: fit-content; margin: 0 auto"
+						>
+							Check
+						</button>
+					</div>
+					<p>Anggota Kelompok 1:</p>
+					<p>Darren Prasetya – 5025211162</p>
+					<p>Yoel M Sitorus – 5025211078</p>
+					<p>Hanun Shaka P – 5025211051</p>
+					<p>Dimas Fadilah Akbar – 5025211010</p>
+					<p>Daud Dhiya' Rozaan – 5025211021</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<style>
+		body {
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			background-image: url("daud.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.wrapper {
+			height: 100vh;
+			position: relative;
+			background-color: #182438a4;
+		}
+
+		.box {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.box-wrapper {
+			background-color: #6d7b8d70;
+			border-radius: 10px;
+			width: fit-content;
+			margin: 0 auto;
+			padding: 40px;
+			text-align: center;
+		}
+
+		.box-wrapper h1 {
+			margin: 0;
+			color: white;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+
+		.box-wrapper p {
+			color: #ffffff95;
+			font-family: sans-serif;
+		}
+
+		input {
+			padding: 10px 40px;
+			border-radius: 10px;
+			text-align: center;
+		}
+
+		button {
+			background: #5e5df0;
+			border-radius: 999px;
+			box-shadow: #5e5df0 0 10px 20px -10px;
+			box-sizing: border-box;
+			color: #ffffff;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+			opacity: 1;
+			outline: 0 solid transparent;
+			padding: 8px 18px;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			width: fit-content;
+			word-break: break-word;
+			border: 0;
+		}
+	</style>
+</html>
